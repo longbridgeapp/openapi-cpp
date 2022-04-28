@@ -2,8 +2,8 @@
 // Created by <wenda.jiang@longbridge.sg> on 2022/4/21.
 //
 
-#ifndef LONGBRIDGE_OPENAPI_DEMO_SRC_CONST_VALUE_H_
-#define LONGBRIDGE_OPENAPI_DEMO_SRC_CONST_VALUE_H_
+#ifndef LONGBRIDGE_OPENSDK_DEMO_SRC_CONST_VALUE_H_
+#define LONGBRIDGE_OPENSDK_DEMO_SRC_CONST_VALUE_H_
 
 #include <string>
 #include "http.h"
@@ -18,4 +18,4 @@ const longbridge::Auth kAuth{
     .token = std::string{
         "your token"}};
 
-#endif  // LONGBRIDGE_OPENAPI_DEMO_SRC_CONST_VALUE_H_
+#endif  // LONGBRIDGE_OPENSDK_DEMO_SRC_CONST_VALUE_H_

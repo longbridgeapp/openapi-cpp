@@ -1,6 +1,6 @@
 ## 用户手册
 
-lb-openapi-cpp SDK 提供了通过[用户认证获取的 Auth ](https://open.longbridgeapp.com)创建 HttpClient 和 WebSocketClient 的能力。
+Longbridge OpenSDK 提供了通过[用户认证获取的 Auth ](https://open.longbridgeapp.com)创建 HttpClient 和 WebSocketClient 的能力。
 
 HttpClient 提供了标准的 `get`,`post`,`put`,`del` 方法，方便用户使用[接口官网](https://open.longbridgeapp.com/docs)的接口。
 

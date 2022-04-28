@@ -7,8 +7,8 @@
  * @brief Client class
  */
 
-#ifndef LONGBRIDGE_OPENAPI_HTTP_H
-#define LONGBRIDGE_OPENAPI_HTTP_H
+#ifndef LONGBRIDGE_OPENSDK_HTTP_H
+#define LONGBRIDGE_OPENSDK_HTTP_H
 #include <string>
 #include <vector>
 
@@ -75,4 +75,4 @@ class Client {
 };
 }  // namespace http
 
-#endif  // LONGBRIDGE_OPENAPI_HTTP_H
+#endif  // LONGBRIDGE_OPENSDK_HTTP_H

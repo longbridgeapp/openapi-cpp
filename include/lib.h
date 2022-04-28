@@ -3,10 +3,10 @@
 //
 
 /**
- * @mainpage lb-openapi-cpp
+ * @mainpage opensdk-cpp
  * @author wenda.jiang@longbridge.sg
  *
- * This is Longbridge OpenAPI SDK-cpp Project.
+ * This is Longbridge OpenSDK C++ Project.
  *
  * You can use this SDK request Longbridge Server API by Http Or Websocket.
  */
@@ -16,8 +16,8 @@
  * @brief SDK 的初始化
  */
 
-#ifndef LONGBRIDGE_OPENAPI_INCLUDE_ENGINE_H_
-#define LONGBRIDGE_OPENAPI_INCLUDE_ENGINE_H_
+#ifndef LONGBRIDGE_OPENSDK_INCLUDE_ENGINE_H_
+#define LONGBRIDGE_OPENSDK_INCLUDE_ENGINE_H_
 #include "lib.rs.h"
 namespace longbridge {
 /**
@@ -28,4 +28,4 @@ namespace longbridge {
 void init(std::string log_path = "", bool log_debug = false);
 }  // namespace longbridge
 
-#endif  // LONGBRIDGE_OPENAPI_INCLUDE_ENGINE_H_
+#endif  // LONGBRIDGE_OPENSDK_INCLUDE_ENGINE_H_

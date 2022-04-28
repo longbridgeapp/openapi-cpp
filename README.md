@@ -1,9 +1,9 @@
-# OpenAPI C++
+# OpenSDK C++
 
 Longbridge OpenSDK for C++ User. 
 
 ## Platform
-OpenAPI use Rustls, and
+OpenSDK inner use Rustls, and
 Rustls uses ring for implementing the cryptography in TLS. 
 As a result, rustls only runs on platforms supported by ring. 
 At the time of writing this means x86, x86-64, armv7, and aarch64.

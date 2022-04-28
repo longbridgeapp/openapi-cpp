@@ -2,8 +2,8 @@
 // Created by <wenda.jiang@longbridge.sg> on 2022/4/11.
 //
 
-#ifndef LONGBRIDGE_OPENAPI_LOGGER_FORMAT_H
-#define LONGBRIDGE_OPENAPI_LOGGER_FORMAT_H
+#ifndef LONGBRIDGE_OPENSDK_LOGGER_FORMAT_H
+#define LONGBRIDGE_OPENSDK_LOGGER_FORMAT_H
 
 #include <cstring>
 #include <iostream>
@@ -199,4 +199,4 @@ struct TGetFileName {
 
 }  // namespace logger
 
-#endif  // LONGBRIDGE_OPENAPI_LOGGER_FORMAT_H
+#endif  // LONGBRIDGE_OPENSDK_LOGGER_FORMAT_H

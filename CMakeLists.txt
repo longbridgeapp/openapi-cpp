@@ -4,9 +4,9 @@ cmake_minimum_required(VERSION 3.11...3.23)
 set(CMAKE_CXX_STANDARD 11)
 
 
-project("Longbridge OpenAPI"
+project("Longbridge OpenSDK"
         VERSION 0.1
-        DESCRIPTION "Longbridge OpenAPI c++ and the demo"
+        DESCRIPTION "Longbridge OpenSDK for C++ User and the Demo"
         LANGUAGES CXX)
 
 

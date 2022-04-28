@@ -7,8 +7,8 @@
  * @brief 日志帮助函数
  */
 
-#ifndef LONGBRIDGE_OPENAPI_LOGGER_H
-#define LONGBRIDGE_OPENAPI_LOGGER_H
+#ifndef LONGBRIDGE_OPENSDK_LOGGER_H
+#define LONGBRIDGE_OPENSDK_LOGGER_H
 
 #include "logger.rs.h"
 #include "logger_format.h"
@@ -94,4 +94,4 @@
 #define LOG_WARN(...) _LOG_WARN_IMP(true, ##__VA_ARGS__)
 #endif
 
-#endif  // LONGBRIDGE_OPENAPI_LOGGER_H
+#endif  // LONGBRIDGE_OPENSDK_LOGGER_H

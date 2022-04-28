@@ -2,8 +2,8 @@
 // Created by <wenda.jiang@longbridge.sg> on 2022/4/11.
 //
 
-#ifndef LONGBRIDGE_OPENAPI_CUSTOM_STRING_H
-#define LONGBRIDGE_OPENAPI_CUSTOM_STRING_H
+#ifndef LONGBRIDGE_OPENSDK_CUSTOM_STRING_H
+#define LONGBRIDGE_OPENSDK_CUSTOM_STRING_H
 
 #include <iostream>
 #include <iterator>
@@ -290,4 +290,4 @@ std::ostream &operator<<(std::ostream &out,
 
 }  // namespace comm
 
-#endif  // LONGBRIDGE_OPENAPI_CUSTOM_STRING_H
+#endif  // LONGBRIDGE_OPENSDK_CUSTOM_STRING_H

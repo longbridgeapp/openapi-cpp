@@ -7,8 +7,8 @@
  * @brief WebSocket class
  */
 
-#ifndef LONGBRIDGE_OPENAPI_INCLUDE_WEBSOCKET_H_
-#define LONGBRIDGE_OPENAPI_INCLUDE_WEBSOCKET_H_
+#ifndef LONGBRIDGE_OPENSDK_INCLUDE_WEBSOCKET_H_
+#define LONGBRIDGE_OPENSDK_INCLUDE_WEBSOCKET_H_
 
 #include "ws.rs.h"
 
@@ -57,4 +57,4 @@ class Client {
 
 }  // namespace websocket
 
-#endif  // LONGBRIDGE_OPENAPI_INCLUDE_WEBSOCKET_H_
+#endif  // LONGBRIDGE_OPENSDK_INCLUDE_WEBSOCKET_H_

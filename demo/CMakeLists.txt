@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.11...3.23)
 
 set (CMAKE_CXX_STANDARD 20)
 
-project("Longbridge OpenAPI Demo"
+project("Longbridge OpenSDK Demo"
         VERSION 0.1
-        DESCRIPTION "Longbridge OpenAPI c++ demo"
+        DESCRIPTION "Longbridge OpenSDK C++ demo"
         LANGUAGES CXX)
 
 find_package(Protobuf REQUIRED)
