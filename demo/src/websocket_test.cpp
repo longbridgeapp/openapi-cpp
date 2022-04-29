@@ -34,7 +34,7 @@ class SingleTon {
 void on_state(callback::OpenWsState state) {
   if (state == callback::OpenWsState::Open) {
     quote::SubscribeRequest sub_req;
-    sub_req.add_symbol("00700.HK");
+    sub_req.add_symbol("700.HK");
     sub_req.add_sub_type(quote::SubType::TRADE);
     sub_req.add_sub_type(quote::SubType::DEPTH);
     sub_req.add_sub_type(quote::SubType::QUOTE);
@@ -42,8 +42,13 @@ void on_state(callback::OpenWsState state) {
     LOG_ERR("on open");
 
     try {
-      SingleTon::get_ws().send_request(quote::Command::Subscribe,
+      std::string resp = SingleTon::get_ws().send_request(quote::Command::Subscribe,
                                        sub_req.SerializeAsString());
+      quote::SubscriptionResponse de_resp;
+      if (de_resp.ParseFromString(resp)) {
+        printf("sub resp %s\n", de_resp.DebugString().c_str());
+      }
+
     } catch (std::exception &e) {
       LOG_ERR("send_request err", e.what());
     }
@@ -94,7 +99,7 @@ int main() {
   callback::register_quote_message_handle(on_message);
   callback::register_quote_ws_state_change(on_state);
   quote::SecurityRequest req;
-  req.set_symbol("00700.HK");
+  req.set_symbol("700.HK");
   websocket::Client& ws = SingleTon::get_ws();
 
   std::string resp;
