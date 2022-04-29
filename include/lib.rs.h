@@ -89,7 +89,7 @@ namespace longbridge {
 struct Auth final {
   ::rust::String app_key;
   ::rust::String app_secret;
-  ::rust::String token;
+  ::rust::String access_token;
 
   using IsRelocatable = ::std::true_type;
 };
