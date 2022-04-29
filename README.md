@@ -33,7 +33,7 @@ $ git clone https://github.com/longbridgeapp/openapi-cpp.git
 
 > NOTE: 首先用户需要根据自己的开发环境在 Release 中选择需要的库文件链接
 
-访问 OpenAPI 开发者认证，获得 **App Key**, **App Secret**, **Access Token\***
+访问 OpenAPI 开发者认证，获得 **App Key**, **App Secret**, **Access Token**
 
 https://open.longbridgeapp.com/account
 
@@ -51,6 +51,7 @@ https://open.longbridgeapp.com/account
   make
 
   # 执行编译得到的 binary 可执行文件
+  # cd demo
   # ./http
   # ./ws_test
   # ./logger
