@@ -12,14 +12,13 @@
 #include "proto/quote.pb.h"
 
 /**
- * ws create cost is high, so use singleton pattern
+ * ws create cost is a little high, so use singleton pattern
  */
 
 class SingleTon {
  public:
   static websocket::Client& get_ws() {
-    // todo use prod wss/ws url
-    static websocket::Client ws{"wss://openapi-quote.longbridge.xyz", kAuth,
+    static websocket::Client ws{"wss://openapi-quote.longbridge.global", kAuth,
                                 ws::WsType::QuoteWs};
     return ws;
   }
