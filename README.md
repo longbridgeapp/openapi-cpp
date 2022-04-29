@@ -24,12 +24,15 @@ WebSocketClient 提供了请求的方法，以及推送消息的回调定义和�
 - Protobuf 环境
 
 ### Usage
-
-```bash
-$ git clone https://github.com/longbridgeapp/openapi-cpp.git
-```
-
 ### 下载 SDK 库
+   ```bash
+   # clone sdk repo
+   cd /your/path
+   git clone https://github.com/longbridgeapp//openapi-cpp.git
+   # init submodule about proto
+   cd openapi-cpp
+   git submodule update --init
+   ```
 
 > NOTE: 首先用户需要根据自己的开发环境在 Release 中选择需要的库文件链接
 
@@ -88,3 +91,7 @@ SDK 主要分为几个部分
 
 你可以方便的使用 HttpClient 和 WebSocketClient 调用 [官网](https://open.longbridgeapp.com) 提供的长桥行情和交易接口，
 日志工具可以选用，也可以使用你现有的日志工具，demo 示例提供了使用两种 Client 的示例。
+
+#### 关于 Protobuf 文件
+proto 文件中存在官网定义的 pb 消息文件， `demo/src/proto` 是通过 proto 中的 pb 文件编译好的文件，
+用户可以自行更新编译最新的 pb 文件
