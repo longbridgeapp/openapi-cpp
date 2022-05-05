@@ -121,7 +121,7 @@ int main() {
     printf("deserialize response error\n");
   }
 
-  // 保留 ws 的生命周期可以在日志中看到行情数据的推送
+  // remain ws lifetime to receive the quote push message
   while (true) {
     using namespace std::chrono_literals;
     std::this_thread::sleep_for(1000ms);

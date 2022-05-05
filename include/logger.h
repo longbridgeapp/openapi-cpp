@@ -80,16 +80,16 @@
 #define LOG_WARN(...) _LOG_WARN_IMP(false, ##__VA_ARGS__)
 #else
 /**
- * @brief ERR 级别日志打印， LOG_ERR("example", a);
+ * @brief ERR log level, LOG_ERR("example", a);
  * output: example a value_of_a
  */
 #define LOG_ERR(...) _LOG_ERR_IMP(true, ##__VA_ARGS__)
 /**
- * @brief DEBUG 级别日志打印， 使用方法同 LOG_ERR
+ * @brief DEBUG log level, same as LOG_ERR
  */
 #define LOG_DEBUG(...) _LOG_DEBUG_IMP(true, ##__VA_ARGS__)
 /**
- * @brief WARN 级别日志打印， 使用方法同 LOG_ERR
+ * @brief WARN log level, same as LOG_ERR
  */
 #define LOG_WARN(...) _LOG_WARN_IMP(true, ##__VA_ARGS__)
 #endif

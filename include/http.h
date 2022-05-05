@@ -20,16 +20,16 @@ namespace http {
 enum class Language { Zh, Hk, En };
 // singleton pattern handle http request
 /**
- * @note Client 的 get post put del 都需要在 try block
- * 中使用，处理请求中出错会抛出异常
+ * @note Client 的 get post put del need be called in try block,
+ * when error happened, SDK will throw exception.
  */
 class Client {
  public:
   ~Client();
   /**
-   * @param base_url 请求的基础 url
-   * @param language 语言设置
-   * @param auth access token 相关，token 非必需
+   * @param base_url request base url
+   * @param language language setting
+   * @param auth token is optional
    */
   Client(std::string base_url, Language language, longbridge::Auth auth);
 

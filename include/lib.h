@@ -21,9 +21,9 @@
 #include "lib.rs.h"
 namespace longbridge {
 /**
- * @brief 初始化 sdk, 可选的设置日志路径和日志级别
- * @param log_path 日志路径，空字符串使用默认
- * @param log_debug 日志是否打开 debug 级别，默认不开
+ * @brief init SDK, optional log path and log level
+ * @param log_path empty string to use default log path
+ * @param log_debug default debug is false, level is warn
  */
 void init(std::string log_path = "", bool log_debug = false);
 }  // namespace longbridge
