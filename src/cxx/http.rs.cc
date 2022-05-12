@@ -1025,7 +1025,7 @@ struct HttpClient final : public ::rust::Opaque {
   ::http_internal::CxxResponse get(::rust::String path, ::rust::String query, const ::http_internal::CxxRequestOption *options) const;
   ::http_internal::CxxResponse post(::rust::String path, ::rust::String payload, const ::http_internal::CxxRequestOption *options) const;
   ::http_internal::CxxResponse put(::rust::String path, ::rust::String payload, const ::http_internal::CxxRequestOption *options) const;
-  ::http_internal::CxxResponse del(::rust::String path, ::rust::String query, const ::http_internal::CxxRequestOption *options) const;
+  ::http_internal::CxxResponse del(::rust::String path, ::rust::String payload, const ::http_internal::CxxRequestOption *options) const;
   ~HttpClient() = delete;
 
 private:
@@ -1061,7 +1061,7 @@ void http_internal$cxxbridge1$HttpClient$set_language(const ::http_internal::Htt
 
 ::rust::repr::PtrLen http_internal$cxxbridge1$HttpClient$put(const ::http_internal::HttpClient &self, ::rust::String *path, ::rust::String *payload, const ::http_internal::CxxRequestOption *options, ::http_internal::CxxResponse *return$) noexcept;
 
-::rust::repr::PtrLen http_internal$cxxbridge1$HttpClient$del(const ::http_internal::HttpClient &self, ::rust::String *path, ::rust::String *query, const ::http_internal::CxxRequestOption *options, ::http_internal::CxxResponse *return$) noexcept;
+::rust::repr::PtrLen http_internal$cxxbridge1$HttpClient$del(const ::http_internal::HttpClient &self, ::rust::String *path, ::rust::String *payload, const ::http_internal::CxxRequestOption *options, ::http_internal::CxxResponse *return$) noexcept;
 } // extern "C"
 
 ::std::size_t HttpClient::layout::size() noexcept {
@@ -1121,9 +1121,9 @@ void HttpClient::set_language(::rust::String language) const noexcept {
   return ::std::move(return$.value);
 }
 
-::http_internal::CxxResponse HttpClient::del(::rust::String path, ::rust::String query, const ::http_internal::CxxRequestOption *options) const {
+::http_internal::CxxResponse HttpClient::del(::rust::String path, ::rust::String payload, const ::http_internal::CxxRequestOption *options) const {
   ::rust::MaybeUninit<::http_internal::CxxResponse> return$;
-  ::rust::repr::PtrLen error$ = http_internal$cxxbridge1$HttpClient$del(*this, &path, &query, options, &return$.value);
+  ::rust::repr::PtrLen error$ = http_internal$cxxbridge1$HttpClient$del(*this, &path, &payload, options, &return$.value);
   if (error$.ptr) {
     throw ::rust::impl<::rust::Error>::error(error$);
   }

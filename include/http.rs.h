@@ -920,7 +920,7 @@ struct HttpClient final : public ::rust::Opaque {
   ::http_internal::CxxResponse get(::rust::String path, ::rust::String query, const ::http_internal::CxxRequestOption *options) const;
   ::http_internal::CxxResponse post(::rust::String path, ::rust::String payload, const ::http_internal::CxxRequestOption *options) const;
   ::http_internal::CxxResponse put(::rust::String path, ::rust::String payload, const ::http_internal::CxxRequestOption *options) const;
-  ::http_internal::CxxResponse del(::rust::String path, ::rust::String query, const ::http_internal::CxxRequestOption *options) const;
+  ::http_internal::CxxResponse del(::rust::String path, ::rust::String payload, const ::http_internal::CxxRequestOption *options) const;
   ~HttpClient() = delete;
 
 private:

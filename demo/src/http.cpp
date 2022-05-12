@@ -42,7 +42,7 @@ int main() {
   http::Client& http_client = SingleTon::get_http_client();
   try {
     http_internal::CxxResponse response =
-        http_client.get("/v1/trade/asset/account", nlohmann::json{});
+        http_client.get("/_ping", nlohmann::json{});
     std::string j{response.data};
     for (auto header : response.headers) {
       cout << header.key.c_str() << ": " << header.value.c_str() << std::endl;
